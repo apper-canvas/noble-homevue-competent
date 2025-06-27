@@ -1,5 +1,5 @@
 {
-  "properties": [
+"properties": [
     {
       "id": "1",
       "title": "Stunning Modern Waterfront Home",
@@ -8,6 +8,8 @@
       "city": "Miami",
       "state": "FL",
       "zipCode": "33101",
+      "latitude": 25.7617,
+      "longitude": -80.1918,
       "propertyType": "house",
       "bedrooms": 4,
       "bathrooms": 3,
@@ -34,7 +36,7 @@
       "listingDate": "2024-01-15T10:00:00Z",
       "status": "For Sale"
     },
-    {
+{
       "id": "2",
       "title": "Charming Victorian in Historic District",
       "price": 850000,
@@ -42,6 +44,8 @@
       "city": "Charleston",
       "state": "SC",
       "zipCode": "29401",
+      "latitude": 32.7765,
+      "longitude": -79.9311,
       "propertyType": "house",
       "bedrooms": 3,
       "bathrooms": 2,
@@ -68,7 +72,7 @@
       "listingDate": "2024-01-12T14:30:00Z",
       "status": "For Sale"
     },
-    {
+{
       "id": "3",
       "title": "Luxury Downtown Penthouse",
       "price": 2100000,
@@ -76,6 +80,8 @@
       "city": "New York",
       "state": "NY",
       "zipCode": "10001",
+      "latitude": 40.7505,
+      "longitude": -73.9934,
       "propertyType": "condo",
       "bedrooms": 3,
       "bathrooms": 3,
@@ -102,7 +108,7 @@
       "listingDate": "2024-01-10T09:15:00Z",
       "status": "For Sale"
     },
-    {
+{
       "id": "4",
       "title": "Contemporary Mountain Retreat",
       "price": 750000,
@@ -110,6 +116,8 @@
       "city": "Aspen",
       "state": "CO",
       "zipCode": "81611",
+      "latitude": 39.1911,
+      "longitude": -106.8175,
       "propertyType": "house",
       "bedrooms": 4,
       "bathrooms": 3,
@@ -136,7 +144,7 @@
       "listingDate": "2024-01-08T16:45:00Z",
       "status": "For Sale"
     },
-    {
+{
       "id": "5",
       "title": "Modern Suburban Family Home",
       "price": 650000,
@@ -144,6 +152,8 @@
       "city": "Austin",
       "state": "TX",
       "zipCode": "78701",
+      "latitude": 30.2672,
+      "longitude": -97.7431,
       "propertyType": "house",
       "bedrooms": 4,
       "bathrooms": 3,
@@ -170,7 +180,7 @@
       "listingDate": "2024-01-05T11:20:00Z",
       "status": "For Sale"
     },
-    {
+{
       "id": "6",
       "title": "Elegant Townhouse in City Center",
       "price": 875000,
@@ -178,6 +188,8 @@
       "city": "Boston",
       "state": "MA",
       "zipCode": "02101",
+      "latitude": 42.3601,
+      "longitude": -71.0589,
       "propertyType": "townhouse",
       "bedrooms": 3,
       "bathrooms": 2,
@@ -204,7 +216,7 @@
       "listingDate": "2024-01-03T13:10:00Z",
       "status": "For Sale"
     },
-    {
+{
       "id": "7",
       "title": "Coastal Cottage with Ocean Views",
       "price": 925000,
@@ -212,6 +224,8 @@
       "city": "Monterey",
       "state": "CA",
       "zipCode": "93940",
+      "latitude": 36.6002,
+      "longitude": -121.8947,
       "propertyType": "house",
       "bedrooms": 2,
       "bathrooms": 2,
@@ -238,7 +252,7 @@
       "listingDate": "2024-01-01T08:30:00Z",
       "status": "For Sale"
     },
-    {
+{
       "id": "8",
       "title": "Luxury Apartment with City Views",
       "price": 1100000,
@@ -246,6 +260,8 @@
       "city": "Seattle",
       "state": "WA",
       "zipCode": "98101",
+      "latitude": 47.6062,
+      "longitude": -122.3321,
       "propertyType": "apartment",
       "bedrooms": 2,
       "bathrooms": 2,
@@ -269,10 +285,10 @@
         "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&h=600&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5",
         "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5"
       ],
-      "listingDate": "2023-12-30T15:45:00Z",
+      "listingDate": "12/30/2023 3:45:00 PMZ",
       "status": "For Sale"
     },
-    {
+{
       "id": "9",
       "title": "Rustic Cabin in the Woods",
       "price": 425000,
@@ -280,6 +296,8 @@
       "city": "Tahoe City",
       "state": "CA",
       "zipCode": "96145",
+      "latitude": 39.1658,
+      "longitude": -120.1633,
       "propertyType": "house",
       "bedrooms": 3,
       "bathrooms": 2,
@@ -306,7 +324,7 @@
       "listingDate": "2023-12-28T12:00:00Z",
       "status": "For Sale"
     },
-    {
+{
       "id": "10",
       "title": "Mid-Century Modern Masterpiece",
       "price": 1375000,
@@ -314,6 +332,8 @@
       "city": "Palm Springs",
       "state": "CA",
       "zipCode": "92262",
+      "latitude": 33.8303,
+      "longitude": -116.5453,
       "propertyType": "house",
       "bedrooms": 3,
       "bathrooms": 3,
@@ -340,7 +360,7 @@
       "listingDate": "2023-12-25T10:15:00Z",
       "status": "For Sale"
     },
-    {
+{
       "id": "11",
       "title": "Farmhouse Style Family Estate",
       "price": 825000,
@@ -348,6 +368,8 @@
       "city": "Nashville",
       "state": "TN",
       "zipCode": "37201",
+      "latitude": 36.1627,
+      "longitude": -86.7816,
       "propertyType": "house",
       "bedrooms": 5,
       "bathrooms": 4,
@@ -374,7 +396,7 @@
       "listingDate": "2023-12-22T14:20:00Z",
       "status": "For Sale"
     },
-    {
+{
       "id": "12",
       "title": "Industrial Loft in Arts District",
       "price": 775000,
@@ -382,6 +404,8 @@
       "city": "Detroit",
       "state": "MI",
       "zipCode": "48201",
+      "latitude": 42.3314,
+      "longitude": -83.0458,
       "propertyType": "condo",
       "bedrooms": 2,
       "bathrooms": 2,
