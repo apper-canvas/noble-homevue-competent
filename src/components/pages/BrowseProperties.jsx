@@ -71,7 +71,7 @@ const BrowseProperties = () => {
     }
   }
   
-  const applyFilters = () => {
+const applyFilters = () => {
     let filtered = [...properties]
     
     // Apply filters
@@ -82,7 +82,7 @@ const BrowseProperties = () => {
       filtered = filtered.filter(p => p.price <= parseInt(filters.priceMax))
     }
     if (filters.propertyType) {
-      filtered = filtered.filter(p => p.propertyType === filters.propertyType)
+      filtered = filtered.filter(p => p.property_type === filters.propertyType)
     }
     if (filters.bedroomsMin) {
       filtered = filtered.filter(p => p.bedrooms >= parseInt(filters.bedroomsMin))
@@ -91,16 +91,16 @@ const BrowseProperties = () => {
       filtered = filtered.filter(p => p.bathrooms >= parseInt(filters.bathroomsMin))
     }
     if (filters.squareFeetMin) {
-      filtered = filtered.filter(p => p.squareFeet >= parseInt(filters.squareFeetMin))
+      filtered = filtered.filter(p => p.square_feet >= parseInt(filters.squareFeetMin))
     }
     if (filters.location) {
       const searchTerm = filters.location.toLowerCase()
       filtered = filtered.filter(p => 
-        p.address.toLowerCase().includes(searchTerm) ||
-        p.city.toLowerCase().includes(searchTerm) ||
-        p.state.toLowerCase().includes(searchTerm) ||
-        p.zipCode.includes(searchTerm) ||
-        p.title.toLowerCase().includes(searchTerm)
+        p.address?.toLowerCase().includes(searchTerm) ||
+        p.city?.toLowerCase().includes(searchTerm) ||
+        p.state?.toLowerCase().includes(searchTerm) ||
+        p.zip_code?.includes(searchTerm) ||
+        p.title?.toLowerCase().includes(searchTerm)
       )
     }
     
@@ -113,10 +113,10 @@ const BrowseProperties = () => {
         filtered.sort((a, b) => b.price - a.price)
         break
       case 'newest':
-        filtered.sort((a, b) => new Date(b.listingDate) - new Date(a.listingDate))
+        filtered.sort((a, b) => new Date(b.listing_date) - new Date(a.listing_date))
         break
       case 'oldest':
-        filtered.sort((a, b) => new Date(a.listingDate) - new Date(b.listingDate))
+        filtered.sort((a, b) => new Date(a.listing_date) - new Date(b.listing_date))
         break
       default:
         break
@@ -142,32 +142,34 @@ const BrowseProperties = () => {
     setSearchParams({})
   }
   
-  const handleToggleFavorite = async (propertyId) => {
+const handleToggleFavorite = async (propertyId) => {
     try {
-      const isCurrentlySaved = savedProperties.some(sp => sp.propertyId === propertyId)
+      const isCurrentlySaved = savedProperties.some(sp => sp.property_id === parseInt(propertyId))
       
       if (isCurrentlySaved) {
-        const savedProperty = savedProperties.find(sp => sp.propertyId === propertyId)
-        await savedPropertyService.delete(savedProperty.id)
-        setSavedProperties(prev => prev.filter(sp => sp.propertyId !== propertyId))
+        const savedProperty = savedProperties.find(sp => sp.property_id === parseInt(propertyId))
+        await savedPropertyService.delete(savedProperty.Id)
+        setSavedProperties(prev => prev.filter(sp => sp.property_id !== parseInt(propertyId)))
         toast.success('Property removed from favorites')
       } else {
         const newSavedProperty = {
-          propertyId,
-          savedDate: new Date().toISOString(),
+          property_id: parseInt(propertyId),
+          saved_date: new Date().toISOString(),
           notes: ''
         }
         const saved = await savedPropertyService.create(newSavedProperty)
-        setSavedProperties(prev => [...prev, saved])
-        toast.success('Property added to favorites')
+        if (saved) {
+          setSavedProperties(prev => [...prev, saved])
+          toast.success('Property added to favorites')
+        }
       }
     } catch (err) {
       toast.error('Failed to update favorites')
     }
   }
   
-  const isFavorite = (propertyId) => {
-    return savedProperties.some(sp => sp.propertyId === propertyId)
+const isFavorite = (propertyId) => {
+    return savedProperties.some(sp => sp.property_id === parseInt(propertyId))
   }
   
   const sortOptions = [

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
-import FavoritesDrawer from "@/components/molecules/FavoritesDrawer";
 import { savedPropertyService } from "@/services/api/savedPropertyService";
 import ApperIcon from "@/components/ApperIcon";
+import FavoritesDrawer from "@/components/molecules/FavoritesDrawer";
 import SearchBar from "@/components/molecules/SearchBar";
 import Button from "@/components/atoms/Button";
 
@@ -28,25 +28,21 @@ const Header = () => {
 
 const navItems = [
     { name: 'Browse', path: '/', icon: 'Search' },
-    { name: 'Map View', path: '/map', icon: 'Map' },
     { name: 'Saved', path: '/saved', icon: 'Heart' },
-    { name: 'Calculator', path: '/calculator', icon: 'Calculator' },
-    { name: 'Contact', path: '/contact', icon: 'Mail' },
-  ]
+    { name: 'About', path: '/about', icon: 'Info' }
+  ];
+
   const isActive = (path) => {
-    if (path === '/') {
-      return location.pathname === '/'
-    }
-    return location.pathname.startsWith(path)
-  }
+    return location.pathname === path;
+  };
 
   const handleFavoritesClick = () => {
-    setIsFavoritesDrawerOpen(true)
-    loadFavoritesCount() // Refresh count when opening drawer
-  }
-return (
+    setIsFavoritesDrawerOpen(true);
+  };
+
+  return (
     <>
-      <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+      <header className="bg-white shadow-soft sticky top-0 z-50 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
@@ -100,6 +96,18 @@ return (
                   )}
                 </Button>
               </div>
+
+              {/* Logout Button */}
+              <Button
+                variant="outline"
+                icon="LogOut"
+                onClick={() => {
+                  const { ApperUI } = window.ApperSDK;
+                  ApperUI.logout();
+                }}
+              >
+                Logout
+              </Button>
             </div>
 
             {/* Mobile Menu Button */}
@@ -148,7 +156,7 @@ return (
                 <Link
                   key={item.name}
                   to={item.path}
-onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={() => setIsMobileMenuOpen(false)}
                   className={`flex items-center space-x-3 px-4 py-3 rounded-button transition-all duration-300 ${
                     isActive(item.path)
                       ? 'bg-accent text-white'
@@ -170,7 +178,7 @@ onClick={() => setIsMobileMenuOpen(false)}
         onClose={() => setIsFavoritesDrawerOpen(false)} 
       />
     </>
-);
+  );
 };
 
 export default Header;

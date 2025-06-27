@@ -36,12 +36,12 @@ const SavedProperties = () => {
     }
   }
   
-  const handleRemoveFromFavorites = async (propertyId) => {
+const handleRemoveFromFavorites = async (propertyId) => {
     try {
-      const savedProperty = savedProperties.find(sp => sp.propertyId === propertyId)
+      const savedProperty = savedProperties.find(sp => sp.property_id === parseInt(propertyId))
       if (savedProperty) {
-        await savedPropertyService.delete(savedProperty.id)
-        setSavedProperties(prev => prev.filter(sp => sp.propertyId !== propertyId))
+        await savedPropertyService.delete(savedProperty.Id)
+        setSavedProperties(prev => prev.filter(sp => sp.property_id !== parseInt(propertyId)))
         toast.success('Property removed from favorites')
       }
     } catch (err) {
@@ -49,14 +49,14 @@ const SavedProperties = () => {
     }
   }
   
-  // Get the full property details for saved properties
+// Get the full property details for saved properties
   const savedPropertiesWithDetails = savedProperties
     .map(saved => {
-      const property = properties.find(p => p.id === saved.propertyId)
-      return property ? { ...property, savedDate: saved.savedDate, notes: saved.notes } : null
+      const property = properties.find(p => p.Id === saved.property_id)
+      return property ? { ...property, saved_date: saved.saved_date, notes: saved.notes } : null
     })
     .filter(Boolean)
-    .sort((a, b) => new Date(b.savedDate) - new Date(a.savedDate))
+    .sort((a, b) => new Date(b.saved_date) - new Date(a.saved_date))
   
   if (loading) {
     return (

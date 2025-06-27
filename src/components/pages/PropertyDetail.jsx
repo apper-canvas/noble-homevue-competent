@@ -58,24 +58,26 @@ const PropertyDetail = () => {
     }
   }
   
-  const handleToggleFavorite = async () => {
+const handleToggleFavorite = async () => {
     try {
-      const isCurrentlySaved = savedProperties.some(sp => sp.propertyId === id)
+      const isCurrentlySaved = savedProperties.some(sp => sp.property_id === parseInt(id))
       
       if (isCurrentlySaved) {
-        const savedProperty = savedProperties.find(sp => sp.propertyId === id)
-        await savedPropertyService.delete(savedProperty.id)
-        setSavedProperties(prev => prev.filter(sp => sp.propertyId !== id))
+        const savedProperty = savedProperties.find(sp => sp.property_id === parseInt(id))
+        await savedPropertyService.delete(savedProperty.Id)
+        setSavedProperties(prev => prev.filter(sp => sp.property_id !== parseInt(id)))
         toast.success('Property removed from favorites')
       } else {
         const newSavedProperty = {
-          propertyId: id,
-          savedDate: new Date().toISOString(),
+          property_id: parseInt(id),
+          saved_date: new Date().toISOString(),
           notes: ''
         }
         const saved = await savedPropertyService.create(newSavedProperty)
-        setSavedProperties(prev => [...prev, saved])
-        toast.success('Property added to favorites')
+        if (saved) {
+          setSavedProperties(prev => [...prev, saved])
+          toast.success('Property added to favorites')
+        }
       }
     } catch (err) {
       toast.error('Failed to update favorites')
@@ -98,7 +100,7 @@ const PropertyDetail = () => {
     setContactForm(prev => ({ ...prev, [field]: value }))
   }
   
-  const isFavorite = savedProperties.some(sp => sp.propertyId === id)
+const isFavorite = savedProperties.some(sp => sp.property_id === parseInt(id))
   
   if (loading) {
     return (
@@ -116,11 +118,11 @@ const PropertyDetail = () => {
     )
   }
   
-  const propertyFeatures = [
+const propertyFeatures = [
     { icon: 'Bed', label: 'Bedrooms', value: property.bedrooms },
     { icon: 'Bath', label: 'Bathrooms', value: property.bathrooms },
-    { icon: 'Square', label: 'Square Feet', value: property.squareFeet?.toLocaleString() },
-    { icon: 'Calendar', label: 'Year Built', value: property.yearBuilt },
+    { icon: 'Square', label: 'Square Feet', value: property.square_feet?.toLocaleString() },
+    { icon: 'Calendar', label: 'Year Built', value: property.year_built },
   ]
   
   return (
@@ -151,9 +153,9 @@ const PropertyDetail = () => {
               <p className="text-3xl price-text mb-2">
                 {formatPrice(property.price)}
               </p>
-              <p className="text-gray-600 flex items-center gap-2">
+<p className="text-gray-600 flex items-center gap-2">
                 <ApperIcon name="MapPin" size={18} />
-                {property.address}, {property.city}, {property.state} {property.zipCode}
+                {property.address}, {property.city}, {property.state} {property.zip_code}
               </p>
             </div>
             
@@ -214,9 +216,9 @@ const PropertyDetail = () => {
               Property Information
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
+<div>
                 <span className="text-gray-600">Property Type:</span>
-                <span className="font-medium ml-2 capitalize">{property.propertyType}</span>
+                <span className="font-medium ml-2 capitalize">{property.property_type}</span>
               </div>
               <div>
                 <span className="text-gray-600">Status:</span>
@@ -224,11 +226,11 @@ const PropertyDetail = () => {
               </div>
               <div>
                 <span className="text-gray-600">Listed:</span>
-                <span className="font-medium ml-2">{formatDate(property.listingDate)}</span>
+                <span className="font-medium ml-2">{formatDate(property.listing_date)}</span>
               </div>
               <div>
                 <span className="text-gray-600">Property ID:</span>
-                <span className="font-medium ml-2">{property.id}</span>
+                <span className="font-medium ml-2">{property.Id}</span>
               </div>
             </div>
           </div>
