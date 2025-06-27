@@ -26,13 +26,13 @@ const Header = () => {
     }
   }
 
-  const navItems = [
+const navItems = [
     { name: 'Browse', path: '/', icon: 'Search' },
     { name: 'Map View', path: '/map', icon: 'Map' },
     { name: 'Saved', path: '/saved', icon: 'Heart' },
     { name: 'Calculator', path: '/calculator', icon: 'Calculator' },
+    { name: 'Contact', path: '/contact', icon: 'Mail' },
   ]
-
   const isActive = (path) => {
     if (path === '/') {
       return location.pathname === '/'
