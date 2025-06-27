@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import ImageGallery from '@/components/molecules/ImageGallery'
+import NeighborhoodStats from '@/components/molecules/NeighborhoodStats'
 import Loading from '@/components/ui/Loading'
 import Error from '@/components/ui/Error'
 import Button from '@/components/atoms/Button'
@@ -174,6 +175,11 @@ const PropertyDetail = () => {
                 <p className="text-sm text-gray-600">{feature.label}</p>
               </div>
             ))}
+</div>
+          
+          {/* Neighborhood Stats */}
+          <div className="mb-8">
+            <NeighborhoodStats propertyId={id} />
           </div>
           
           {/* Property Description */}

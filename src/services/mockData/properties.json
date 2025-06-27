@@ -27,13 +27,75 @@
         "Master suite with private balcony",
         "3-car garage",
         "Landscaped gardens"
-      ],
+],
+      "neighborhood": {
+        "schools": [
+          {
+            "name": "Miami Waterfront Elementary",
+            "type": "Elementary School",
+            "rating": 4.8,
+            "distance": 0.3
+          },
+          {
+            "name": "Harbor View Middle School",
+            "type": "Middle School", 
+            "rating": 4.6,
+            "distance": 0.7
+          },
+          {
+            "name": "Biscayne Bay High School",
+            "type": "High School",
+            "rating": 4.9,
+            "distance": 1.2
+          }
+        ],
+        "transit": [
+          {
+            "name": "Harbor Metro Station",
+            "type": "Metro Rail",
+            "rating": 4.3,
+            "distance": 0.8
+          },
+          {
+            "name": "Waterfront Bus Terminal",
+            "type": "Bus Station",
+            "rating": 4.1,
+            "distance": 0.4
+          }
+        ],
+        "amenities": [
+          {
+            "name": "Harbor View Shopping Center",
+            "type": "Shopping",
+            "rating": 4.5,
+            "distance": 0.6
+          },
+          {
+            "name": "Bayfront Park",
+            "type": "Recreation",
+            "rating": 4.7,
+            "distance": 0.2
+          },
+          {
+            "name": "Miami General Hospital",
+            "type": "Healthcare",
+            "rating": 4.4,
+            "distance": 1.1
+          },
+          {
+            "name": "Seaside Fitness Club",
+            "type": "Fitness",
+            "rating": 4.6,
+            "distance": 0.5
+          }
+        ]
+      },
       "images": [
         "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&h=600&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5",
         "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5",
         "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5"
       ],
-      "listingDate": "2024-01-15T10:00:00Z",
+      "listingDate": "1/15/2024 10:00:00 AMZ",
       "status": "For Sale"
     },
 {
@@ -63,7 +125,69 @@
         "Working fireplaces",
         "Carriage house",
         "Walking distance to downtown"
-      ],
+],
+      "neighborhood": {
+        "schools": [
+          {
+            "name": "Charleston Historic Elementary",
+            "type": "Elementary School",
+            "rating": 4.9,
+            "distance": 0.2
+          },
+          {
+            "name": "Heritage Middle School",
+            "type": "Middle School",
+            "rating": 4.7,
+            "distance": 0.5
+          },
+          {
+            "name": "Charleston Classical High",
+            "type": "High School", 
+            "rating": 4.8,
+            "distance": 0.8
+          }
+        ],
+        "transit": [
+          {
+            "name": "Historic District Trolley",
+            "type": "Trolley",
+            "rating": 4.6,
+            "distance": 0.1
+          },
+          {
+            "name": "Charleston Bus Hub",
+            "type": "Bus Station",
+            "rating": 4.2,
+            "distance": 0.6
+          }
+        ],
+        "amenities": [
+          {
+            "name": "Historic Market Square",
+            "type": "Shopping",
+            "rating": 4.8,
+            "distance": 0.3
+          },
+          {
+            "name": "Waterfront Park",
+            "type": "Recreation",
+            "rating": 4.9,
+            "distance": 0.4
+          },
+          {
+            "name": "Charleston Medical Center",
+            "type": "Healthcare",
+            "rating": 4.5,
+            "distance": 0.9
+          },
+          {
+            "name": "Historic District Cafe",
+            "type": "Dining",
+            "rating": 4.7,
+            "distance": 0.2
+          }
+        ]
+      },
       "images": [
         "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5",
         "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?w=800&h=600&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5",
@@ -99,7 +223,69 @@
         "Marble bathrooms",
         "Custom millwork",
         "Valet parking"
-      ],
+],
+      "neighborhood": {
+        "schools": [
+          {
+            "name": "Manhattan Prep Academy",
+            "type": "Elementary School",
+            "rating": 4.9,
+            "distance": 0.4
+          },
+          {
+            "name": "Skyline Middle School",
+            "type": "Middle School",
+            "rating": 4.8,
+            "distance": 0.6
+          },
+          {
+            "name": "Metropolitan High School",
+            "type": "High School",
+            "rating": 4.7,
+            "distance": 0.8
+          }
+        ],
+        "transit": [
+          {
+            "name": "34th St-Penn Station",
+            "type": "Subway",
+            "rating": 4.4,
+            "distance": 0.3
+          },
+          {
+            "name": "Herald Square Station",
+            "type": "Subway",
+            "rating": 4.3,
+            "distance": 0.5
+          }
+        ],
+        "amenities": [
+          {
+            "name": "Macy's Herald Square",
+            "type": "Shopping",
+            "rating": 4.6,
+            "distance": 0.5
+          },
+          {
+            "name": "Madison Square Park",
+            "type": "Recreation",
+            "rating": 4.8,
+            "distance": 0.7
+          },
+          {
+            "name": "NYU Langone Health",
+            "type": "Healthcare",
+            "rating": 4.9,
+            "distance": 1.2
+          },
+          {
+            "name": "Koreatown District",
+            "type": "Dining",
+            "rating": 4.7,
+            "distance": 0.4
+          }
+        ]
+      },
       "images": [
         "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&h=600&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5",
         "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5",
@@ -135,7 +321,69 @@
         "Home office",
         "Attached garage",
         "Near ski slopes"
-      ],
+],
+      "neighborhood": {
+        "schools": [
+          {
+            "name": "Aspen Elementary School",
+            "type": "Elementary School",
+            "rating": 4.6,
+            "distance": 1.8
+          },
+          {
+            "name": "Rocky Mountain Middle",
+            "type": "Middle School",
+            "rating": 4.5,
+            "distance": 2.1
+          },
+          {
+            "name": "Aspen High School",
+            "type": "High School",
+            "rating": 4.7,
+            "distance": 2.5
+          }
+        ],
+        "transit": [
+          {
+            "name": "Aspen Shuttle Hub",
+            "type": "Bus Station",
+            "rating": 4.2,
+            "distance": 1.4
+          },
+          {
+            "name": "Mountain Express",
+            "type": "Shuttle",
+            "rating": 4.4,
+            "distance": 0.9
+          }
+        ],
+        "amenities": [
+          {
+            "name": "Aspen Highlands Ski Area",
+            "type": "Recreation",
+            "rating": 4.9,
+            "distance": 0.3
+          },
+          {
+            "name": "Aspen Village Market",
+            "type": "Shopping",
+            "rating": 4.3,
+            "distance": 1.6
+          },
+          {
+            "name": "Aspen Valley Hospital",
+            "type": "Healthcare",
+            "rating": 4.6,
+            "distance": 2.8
+          },
+          {
+            "name": "The Little Nell Spa",
+            "type": "Wellness",
+            "rating": 4.8,
+            "distance": 2.2
+          }
+        ]
+      },
       "images": [
         "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&h=600&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5",
         "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&h=600&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5",
@@ -171,7 +419,69 @@
         "Energy efficient appliances",
         "Top-rated school district",
         "Community pool access"
-      ],
+],
+      "neighborhood": {
+        "schools": [
+          {
+            "name": "Maple Grove Elementary",
+            "type": "Elementary School",
+            "rating": 4.8,
+            "distance": 0.4
+          },
+          {
+            "name": "Austin Ridge Middle School",
+            "type": "Middle School",
+            "rating": 4.7,
+            "distance": 0.8
+          },
+          {
+            "name": "Lake Austin High School",
+            "type": "High School",
+            "rating": 4.9,
+            "distance": 1.2
+          }
+        ],
+        "transit": [
+          {
+            "name": "CapMetro Transit Center",
+            "type": "Bus Station",
+            "rating": 4.1,
+            "distance": 0.9
+          },
+          {
+            "name": "MetroRail Red Line",
+            "type": "Light Rail",
+            "rating": 4.3,
+            "distance": 1.8
+          }
+        ],
+        "amenities": [
+          {
+            "name": "The Domain Shopping",
+            "type": "Shopping",
+            "rating": 4.6,
+            "distance": 2.1
+          },
+          {
+            "name": "Zilker Park",
+            "type": "Recreation",
+            "rating": 4.8,
+            "distance": 3.2
+          },
+          {
+            "name": "St. David's Medical Center",
+            "type": "Healthcare",
+            "rating": 4.5,
+            "distance": 1.6
+          },
+          {
+            "name": "South Austin Gym",
+            "type": "Fitness",
+            "rating": 4.4,
+            "distance": 0.7
+          }
+        ]
+      },
       "images": [
         "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5",
         "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&h=600&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5",
@@ -207,7 +517,69 @@
         "Private entrance",
         "Walk to public transit",
         "City views"
-      ],
+],
+      "neighborhood": {
+        "schools": [
+          {
+            "name": "Boston Latin School",
+            "type": "High School",
+            "rating": 4.9,
+            "distance": 0.8
+          },
+          {
+            "name": "Downtown Academy",
+            "type": "Elementary School",
+            "rating": 4.7,
+            "distance": 0.3
+          },
+          {
+            "name": "Harbor Middle School",
+            "type": "Middle School",
+            "rating": 4.6,
+            "distance": 0.6
+          }
+        ],
+        "transit": [
+          {
+            "name": "Downtown Crossing",
+            "type": "Subway",
+            "rating": 4.5,
+            "distance": 0.2
+          },
+          {
+            "name": "State Street Station",
+            "type": "Subway",
+            "rating": 4.4,
+            "distance": 0.4
+          }
+        ],
+        "amenities": [
+          {
+            "name": "Faneuil Hall Marketplace",
+            "type": "Shopping",
+            "rating": 4.7,
+            "distance": 0.3
+          },
+          {
+            "name": "Boston Common",
+            "type": "Recreation",
+            "rating": 4.8,
+            "distance": 0.5
+          },
+          {
+            "name": "Massachusetts General Hospital",
+            "type": "Healthcare",
+            "rating": 4.9,
+            "distance": 0.7
+          },
+          {
+            "name": "North End Italian District",
+            "type": "Dining",
+            "rating": 4.8,
+            "distance": 0.6
+          }
+        ]
+      },
       "images": [
         "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&h=600&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5",
         "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5",
@@ -243,7 +615,69 @@
         "Private garden",
         "Outdoor shower",
         "Detached studio"
-      ],
+],
+      "neighborhood": {
+        "schools": [
+          {
+            "name": "Seaside Elementary",
+            "type": "Elementary School",
+            "rating": 4.5,
+            "distance": 2.1
+          },
+          {
+            "name": "Monterey Bay Middle",
+            "type": "Middle School",
+            "rating": 4.4,
+            "distance": 2.8
+          },
+          {
+            "name": "Carmel High School",
+            "type": "High School",
+            "rating": 4.7,
+            "distance": 4.2
+          }
+        ],
+        "transit": [
+          {
+            "name": "Monterey Transit Plaza",
+            "type": "Bus Station",
+            "rating": 4.0,
+            "distance": 3.1
+          },
+          {
+            "name": "Seaside Shuttle Stop",
+            "type": "Shuttle",
+            "rating": 4.2,
+            "distance": 1.8
+          }
+        ],
+        "amenities": [
+          {
+            "name": "Monterey Bay Aquarium",
+            "type": "Recreation",
+            "rating": 4.9,
+            "distance": 2.8
+          },
+          {
+            "name": "Fisherman's Wharf",
+            "type": "Dining",
+            "rating": 4.6,
+            "distance": 2.5
+          },
+          {
+            "name": "Community Hospital",
+            "type": "Healthcare",
+            "rating": 4.3,
+            "distance": 3.4
+          },
+          {
+            "name": "Pebble Beach Golf",
+            "type": "Recreation",
+            "rating": 4.8,
+            "distance": 5.2
+          }
+        ]
+      },
       "images": [
         "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&h=600&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5",
         "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&h=600&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5",
@@ -279,7 +713,69 @@
         "Concierge service",
         "Pet-friendly",
         "Underground parking"
-      ],
+],
+      "neighborhood": {
+        "schools": [
+          {
+            "name": "Seattle Academy",
+            "type": "Elementary School",
+            "rating": 4.6,
+            "distance": 0.5
+          },
+          {
+            "name": "Roosevelt Middle School",
+            "type": "Middle School",
+            "rating": 4.7,
+            "distance": 0.8
+          },
+          {
+            "name": "Garfield High School",
+            "type": "High School",
+            "rating": 4.8,
+            "distance": 1.1
+          }
+        ],
+        "transit": [
+          {
+            "name": "University Street Station",
+            "type": "Light Rail",
+            "rating": 4.5,
+            "distance": 0.3
+          },
+          {
+            "name": "Pike Place Market Bus",
+            "type": "Bus Station",
+            "rating": 4.2,
+            "distance": 0.6
+          }
+        ],
+        "amenities": [
+          {
+            "name": "Pike Place Market",
+            "type": "Shopping",
+            "rating": 4.8,
+            "distance": 0.6
+          },
+          {
+            "name": "Seattle Center",
+            "type": "Recreation",
+            "rating": 4.7,
+            "distance": 1.2
+          },
+          {
+            "name": "Swedish Medical Center",
+            "type": "Healthcare",
+            "rating": 4.6,
+            "distance": 0.9
+          },
+          {
+            "name": "Capitol Hill District",
+            "type": "Dining",
+            "rating": 4.7,
+            "distance": 0.8
+          }
+        ]
+      },
       "images": [
         "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?w=800&h=600&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5",
         "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&h=600&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5",
@@ -315,7 +811,63 @@
         "Vaulted ceilings",
         "Private setting",
         "Near hiking trails"
-      ],
+],
+      "neighborhood": {
+        "schools": [
+          {
+            "name": "Tahoe Elementary",
+            "type": "Elementary School",
+            "rating": 4.2,
+            "distance": 8.4
+          },
+          {
+            "name": "North Tahoe High School",
+            "type": "High School",
+            "rating": 4.4,
+            "distance": 9.2
+          }
+        ],
+        "transit": [
+          {
+            "name": "Tahoe Area Transit",
+            "type": "Bus Station",
+            "rating": 3.9,
+            "distance": 7.8
+          },
+          {
+            "name": "Truckee Amtrak",
+            "type": "Train",
+            "rating": 4.1,
+            "distance": 12.5
+          }
+        ],
+        "amenities": [
+          {
+            "name": "Tahoe City Marina",
+            "type": "Recreation",
+            "rating": 4.6,
+            "distance": 8.1
+          },
+          {
+            "name": "Village at Northstar",
+            "type": "Shopping",
+            "rating": 4.3,
+            "distance": 15.2
+          },
+          {
+            "name": "Tahoe Forest Hospital",
+            "type": "Healthcare",
+            "rating": 4.2,
+            "distance": 9.8
+          },
+          {
+            "name": "Tahoe Rim Trail",
+            "type": "Recreation",
+            "rating": 4.9,
+            "distance": 0.8
+          }
+        ]
+      },
       "images": [
         "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5",
         "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?w=800&h=600&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5",
@@ -351,7 +903,63 @@
         "Post and beam construction",
         "Clerestory windows",
         "Historic significance"
-      ],
+],
+      "neighborhood": {
+        "schools": [
+          {
+            "name": "Desert Sun Elementary",
+            "type": "Elementary School",
+            "rating": 4.3,
+            "distance": 3.2
+          },
+          {
+            "name": "Palm Springs High School",
+            "type": "High School",
+            "rating": 4.1,
+            "distance": 4.8
+          }
+        ],
+        "transit": [
+          {
+            "name": "SunLine Transit Agency",
+            "type": "Bus Station",
+            "rating": 3.8,
+            "distance": 2.9
+          },
+          {
+            "name": "Palm Springs Airport",
+            "type": "Airport",
+            "rating": 4.4,
+            "distance": 3.7
+          }
+        ],
+        "amenities": [
+          {
+            "name": "The Gardens Shopping",
+            "type": "Shopping",
+            "rating": 4.5,
+            "distance": 3.1
+          },
+          {
+            "name": "Indian Canyons",
+            "type": "Recreation",
+            "rating": 4.8,
+            "distance": 2.4
+          },
+          {
+            "name": "Desert Regional Medical",
+            "type": "Healthcare",
+            "rating": 4.2,
+            "distance": 4.5
+          },
+          {
+            "name": "Two Bunch Palms Spa",
+            "type": "Wellness",
+            "rating": 4.7,
+            "distance": 5.8
+          }
+        ]
+      },
       "images": [
         "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5",
         "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&h=600&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5",
@@ -387,7 +995,69 @@
         "Mudroom",
         "3-car garage",
         "Fenced pasture"
-      ],
+],
+      "neighborhood": {
+        "schools": [
+          {
+            "name": "Country Manor Elementary",
+            "type": "Elementary School",
+            "rating": 4.7,
+            "distance": 2.1
+          },
+          {
+            "name": "Heritage Middle School",
+            "type": "Middle School",
+            "rating": 4.5,
+            "distance": 2.8
+          },
+          {
+            "name": "Franklin High School",
+            "type": "High School",
+            "rating": 4.6,
+            "distance": 3.4
+          }
+        ],
+        "transit": [
+          {
+            "name": "Nashville MTA Hub",
+            "type": "Bus Station",
+            "rating": 4.0,
+            "distance": 8.7
+          },
+          {
+            "name": "Music City Star",
+            "type": "Train",
+            "rating": 4.2,
+            "distance": 9.2
+          }
+        ],
+        "amenities": [
+          {
+            "name": "The Mall at Green Hills",
+            "type": "Shopping",
+            "rating": 4.4,
+            "distance": 7.8
+          },
+          {
+            "name": "Percy Warner Park",
+            "type": "Recreation",
+            "rating": 4.8,
+            "distance": 1.2
+          },
+          {
+            "name": "Vanderbilt Medical Center",
+            "type": "Healthcare",
+            "rating": 4.9,
+            "distance": 9.5
+          },
+          {
+            "name": "Belle Meade Country Club",
+            "type": "Recreation",
+            "rating": 4.6,
+            "distance": 6.3
+          }
+        ]
+      },
       "images": [
         "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5",
         "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&h=600&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5",
@@ -423,7 +1093,69 @@
         "In-unit laundry",
         "Roof deck access",
         "Arts district location"
-      ],
+],
+      "neighborhood": {
+        "schools": [
+          {
+            "name": "Detroit Arts Academy",
+            "type": "High School",
+            "rating": 4.3,
+            "distance": 0.6
+          },
+          {
+            "name": "Renaissance Elementary",
+            "type": "Elementary School",
+            "rating": 4.1,
+            "distance": 0.8
+          },
+          {
+            "name": "Corktown Middle School",
+            "type": "Middle School",
+            "rating": 4.0,
+            "distance": 1.2
+          }
+        ],
+        "transit": [
+          {
+            "name": "Corktown Station",
+            "type": "Train",
+            "rating": 4.3,
+            "distance": 0.4
+          },
+          {
+            "name": "DDOT Bus Terminal",
+            "type": "Bus Station",
+            "rating": 3.9,
+            "distance": 0.7
+          }
+        ],
+        "amenities": [
+          {
+            "name": "Eastern Market",
+            "type": "Shopping",
+            "rating": 4.6,
+            "distance": 1.1
+          },
+          {
+            "name": "Hart Plaza",
+            "type": "Recreation",
+            "rating": 4.4,
+            "distance": 1.8
+          },
+          {
+            "name": "Henry Ford Hospital",
+            "type": "Healthcare",
+            "rating": 4.5,
+            "distance": 2.3
+          },
+          {
+            "name": "Detroit Institute of Arts",
+            "type": "Culture",
+            "rating": 4.8,
+            "distance": 2.1
+          }
+        ]
+      },
       "images": [
         "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&h=600&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5",
         "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5",
